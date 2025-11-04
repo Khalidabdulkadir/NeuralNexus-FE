@@ -1,5 +1,5 @@
 // Central API configuration
-export const API_BASE_URL = 'http://localhost:8000';
+export const API_BASE_URL = 'https://neural-nexus-2.onrender.com';
 
 export const API_ENDPOINTS = {
   predictor: `${API_BASE_URL}/api/predictor/predict/`,
