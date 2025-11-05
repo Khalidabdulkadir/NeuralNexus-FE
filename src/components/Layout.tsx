@@ -10,7 +10,7 @@ export function Layout() {
     <SidebarProvider>
       <div className="min-h-screen flex w-full bg-gradient-medical">
         <AppSidebar />
-        
+
         <div className="flex-1 flex flex-col">
           {/* Header */}
           <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
@@ -49,15 +49,23 @@ export function Layout() {
 
           {/* Footer */}
           <footer className="border-t bg-card/50 backdrop-blur-sm">
-            <div className="container mx-auto px-4 py-6">
-              <motion.p
-                className="text-center text-sm text-muted-foreground"
+            <div className="container mx-auto px-4 py-6 text-center">
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                <span className="font-semibold text-primary">Moringa School Group 4 Project</span>
-              </motion.p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  <span className="font-semibold text-primary">
+                    Neural Nexus Group 4
+                  </span>{" "}
+                  — AI-Powered Cancer Detection & Treatment System
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  <span className="font-semibold">Team Members:</span>{" "}
+                  Elsi Almadi · Khalid Abdulkadir · Jeremy Koome · Tiffany Cheruto · Meshack Mboya
+                </p>
+              </motion.div>
             </div>
           </footer>
         </div>
